@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.TicketActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorwhite">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mp_size_10"
+            android:layout_marginTop="@dimen/mp_size_4"
+            android:layout_marginBottom="@dimen/mp_size_4"
+            android:src="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/ivClose"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Ticket"
+            android:textColor="@color/colorBlack1"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivTicketSave"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/mp_size_4"
+            android:padding="4dp"
+            android:src="@drawable/ic_right"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlActionBar"
+        android:layout_marginTop="@dimen/mp_size_10">
+
+        <TextView
+            android:id="@+id/tvTaskTag"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/mp_size_8"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="left|center"
+
+            android:text="Task"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size_14" />
+
+        <Spinner
+            android:id="@+id/spTask"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tvTaskTag"
+            android:background="@drawable/spinner_bg"
+            android:layout_margin="@dimen/mp_size_4"
+            android:gravity="left|center"
+            android:padding="@dimen/mp_size_10">
+
+        </Spinner>
+
+
+        <EditText
+            android:id="@+id/edQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTaskTag"
+            android:layout_margin="@dimen/mp_size_8"
+            android:background="@drawable/bgbutton"
+            android:elevation="@dimen/mp_size_2"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="start"
+            android:hint="Asking Queries"
+            android:lines="5"
+            android:padding="@dimen/mp_size_10"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack2"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:id="@+id/rlAddPeopleLayout"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvStaffName"
+        android:layout_width="match_parent"
+        android:padding="@dimen/mp_size_14"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mp_size_4"
+        android:layout_toLeftOf="@+id/tvDesignation"
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <TextView
+        android:id="@+id/tvDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/mp_size_14"
+        android:layout_margin="@dimen/mp_size_4"
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/colorBlack"
+        android:alpha="0.5"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tvDesignation"
+        android:alpha="0.5"
+        android:background="@color/colorBlack3">
+
+    </View>
+</RelativeLayout>

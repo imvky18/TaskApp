@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:lineSpacingExtra="1.5dp"
+    android:gravity="start"
+    android:padding="@dimen/mp_size_4"
+    android:textSize="@dimen/text_size_14"
+    android:fontFamily="@font/opensans_regular"
+    android:background="@android:color/transparent"
+    android:textColor="@color/colorBlack"
+    />

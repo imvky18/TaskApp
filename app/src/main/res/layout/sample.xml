@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/View"
+            android:layout_width="50dp"
+            android:layout_height="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mp_size_2"
+            android:background="@drawable/bottomdailog_view"></View>
+
+
+        <RelativeLayout
+            android:id="@+id/BottomDialogSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/View"
+            android:layout_marginTop="@dimen/mp_size_10"
+            android:background="@drawable/bottomdailog_bg"
+            android:padding="@dimen/mp_size_8">
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mp_size_8"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Task"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rlRelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHeading"
+                android:layout_margin="@dimen/mp_size_8">
+
+                <RelativeLayout
+                    android:id="@+id/rlAddReminderLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:background="@drawable/layout_outline"
+                    android:clickable="true"
+                    android:elevation="@dimen/mp_size_4"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center|center_vertical">
+
+
+                    <ImageView
+                        android:id="@+id/ivClock"
+                        android:layout_width="@dimen/mp_size_24"
+                        android:layout_height="@dimen/mp_size_24"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:src="@drawable/ic_time" />
+
+                    <TextView
+                        android:id="@+id/tvAddReminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivClock"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:alpha="0.8"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/Add_Reminder"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_12" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlAddPeopleLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:background="@drawable/layout_outline"
+                    android:clickable="true"
+                    android:elevation="@dimen/mp_size_4"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center|center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ivPeople"
+                        android:layout_width="@dimen/mp_size_24"
+                        android:layout_height="@dimen/mp_size_24"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:src="@drawable/ic_people" />
+
+                    <TextView
+                        android:id="@+id/tvAddPeople"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivPeople"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/Add_People"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_12" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlAddWorkLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:background="@drawable/layout_outline"
+                    android:clickable="true"
+                    android:elevation="@dimen/mp_size_4"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center|center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ivWork"
+                        android:layout_width="@dimen/mp_size_24"
+                        android:layout_height="@dimen/mp_size_24"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:src="@drawable/ic_work" />
+
+                    <TextView
+                        android:id="@+id/tvAddWork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivWork"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/Add_Work"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_12" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlRelativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlRelativeLayout1"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/rlTicketLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:background="@drawable/layout_outline"
+                    android:clickable="true"
+                    android:elevation="@dimen/mp_size_4"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center|center_vertical">
+
+
+                    <ImageView
+                        android:id="@+id/ivTicket"
+                        android:layout_width="@dimen/mp_size_24"
+                        android:layout_height="@dimen/mp_size_24"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:src="@drawable/ic_ticket" />
+
+                    <TextView
+                        android:id="@+id/tvAddTicket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivTicket"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/Ticket"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_12" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlAttachmentLayout"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:layout_toRightOf="@id/rlTicketLayout"
+                    android:background="@drawable/layout_outline"
+                    android:clickable="true"
+                    android:elevation="@dimen/mp_size_4"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center|center_vertical">
+
+
+                    <ImageView
+                        android:id="@+id/ivAttachment"
+                        android:layout_width="@dimen/mp_size_24"
+                        android:layout_height="@dimen/mp_size_24"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:src="@drawable/ic_fileattach" />
+
+                    <TextView
+                        android:id="@+id/tvAttachment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivAttachment"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/mp_size_2"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="@string/Attachment"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_12" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlNotesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlRelativeLayout2"
+                android:layout_margin="@dimen/mp_size_8">
+
+                <TextView
+                    android:id="@+id/tvNotesTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/notes"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tvNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mp_size_50"
+                    android:layout_below="@id/tvNotesTag"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:background="@drawable/dottedline_bg"
+                    android:elevation="@dimen/mp_size_2"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:hint="@string/Tap_to_add_notes"
+                    android:textSize="@dimen/text_size_14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCreatedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlNotesLayout"
+                android:layout_margin="@dimen/mp_size_8">
+
+                <TextView
+                    android:id="@+id/tvCreatedTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/createdon"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tvCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvCreatedTag"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Jul 31,2019"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCreatedByLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlCreatedLayout"
+                android:layout_margin="@dimen/mp_size_8">
+
+                <TextView
+                    android:id="@+id/tvCreatedByTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/created_by"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tvCreateBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvCreatedByTag"
+                    android:layout_margin="@dimen/mp_size_8"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Ponni"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlCreatedByLayout"
+                android:layout_margin="@dimen/mp_size_8"
+                android:background="@drawable/button_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/opensans_regular"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="16dp"
+                android:text="Delete Task"
+                android:textAllCaps="false"
+                android:textColor="@color/colorred"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

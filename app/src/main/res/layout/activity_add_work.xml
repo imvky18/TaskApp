@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.AddWorkActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorwhite"
+        >
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mp_size_10"
+            android:layout_marginTop="@dimen/mp_size_4"
+            android:layout_marginBottom="@dimen/mp_size_4"
+            android:src="@drawable/ic_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/ivClose"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Add Work"
+            android:textColor="@color/colorBlack1"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivAddWorkSave"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/mp_size_4"
+            android:padding="4dp"
+            android:src="@drawable/ic_right"
+            android:visibility="gone"
+             />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mp_size_10"
+        android:layout_below="@+id/rlActionBar"
+        >
+
+        <TextView
+            android:id="@+id/tvTimeTag"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mp_size_8"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Time"
+            android:padding="@dimen/mp_size_4"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mp_size_8"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_toRightOf="@+id/tvTimeTag"
+            android:text="Time"
+            android:padding="@dimen/mp_size_4"
+            android:background="@drawable/layout_outline"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/text_size_14" />
+
+
+
+
+        <EditText
+            android:id="@+id/edWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTime"
+            android:lines="5"
+            android:gravity="start"
+            android:hint="Work"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack2"
+            android:padding="@dimen/mp_size_10"
+            android:layout_margin="@dimen/mp_size_8"
+            android:background="@drawable/bgbutton"
+            android:elevation="@dimen/mp_size_2"
+            android:fontFamily="@font/opensans_semibold"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

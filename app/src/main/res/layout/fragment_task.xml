@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#f2f2f2"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/mp_size_4"
+        android:layout_marginTop="@dimen/mp_size_10"
+        android:layout_marginRight="@dimen/mp_size_4"
+        android:layout_marginBottom="@dimen/mp_size_10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlTodayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mp_size_4">
+
+            <TextView
+                android:id="@+id/tvTodayTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mp_size_10"
+                android:text="Today"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rlTodayClick"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/mp_size_4"
+                android:layout_marginRight="@dimen/mp_size_14"
+                android:layout_marginBottom="@dimen/mp_size_4"
+                android:alpha="0.5"
+                android:src="@drawable/ic_plus"
+                android:tint="@color/colorBlue" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mp_size_4"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mp_size_10"
+                android:layout_marginRight="@dimen/mp_size_10"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mp_size_4">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mp_size_10"
+                android:text="Tomorrow"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/mp_size_4"
+                android:layout_marginRight="@dimen/mp_size_14"
+                android:layout_marginBottom="@dimen/mp_size_4"
+                android:alpha="0.5"
+                android:src="@drawable/ic_plus"
+                android:tint="@color/colorBlue" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mp_size_4">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mp_size_10"
+                android:text="All Task"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/mp_size_4"
+                android:layout_marginRight="@dimen/mp_size_14"
+                android:layout_marginBottom="@dimen/mp_size_4"
+                android:alpha="0.5"
+                android:src="@drawable/ic_plus"
+                android:tint="@color/colorBlue" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mp_size_4">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mp_size_10"
+                android:text="Pending"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/mp_size_4"
+                android:layout_marginRight="@dimen/mp_size_14"
+                android:layout_marginBottom="@dimen/mp_size_4"
+                android:alpha="0.5"
+                android:src="@drawable/ic_plus"
+                android:tint="@color/colorBlue" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
